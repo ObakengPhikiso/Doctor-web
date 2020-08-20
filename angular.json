@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "doctor-web"
+    }
+  },
+  "defaultProject": "doctor-web",
+  "cli": {
+    "analytics": false
+  }
 }
