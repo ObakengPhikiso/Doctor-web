@@ -1,1 +1,118 @@
-<p>doctor-profile works!</p>
+<div class="content">
+    <div class="container">
+
+        <!-- Doctor Widget -->
+        <div class="card">
+            <div class="card-body">
+                <div class="doctor-widget">
+                    <div class="doc-info-left">
+                        <div class="doctor-img">
+                            <img src="assets/img/doctors/doctor-thumb-02.jpg" class="img-fluid" alt="User Image">
+                        </div>
+                        <div class="doc-info-cont">
+                            <h4 class="doc-name">Dr. Darren Elder</h4>
+                            <p class="doc-speciality">BDS, MDS - Oral & Maxillofacial Surgery</p>
+                            <p class="doc-department"><img src="assets/img/specialities/specialities-05.png"
+                                    class="img-fluid" alt="Speciality">Dentist</p>
+                            <div class="rating">
+                                <i class="fa fa-star filled"></i>
+                                <i class="fa fa-star filled"></i>
+                                <i class="fa fa-star filled"></i>
+                                <i class="fa fa-star filled"></i>
+                                <i class="fa fa-star"></i>
+                                <span class="d-inline-block average-rating">(35)</span>
+                            </div>
+                            <div class="clinic-details">
+                                <p class="doc-location">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i> Newyork, USA - <a
+                                        href="javascript:void(0);">Get Directions</a></p>
+                            </div>
+                            <div class="clinic-services">
+                                <span>Dental Fillings</span>
+                                <span>Teeth Whitneing</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doc-info-right">
+                        <div class="clini-infos">
+                            <ul>
+                                <li><i class="fa fa-thumbs-up"></i> 99%</li>
+                                <li><i class="fa fa-comment"></i> 35 Feedback</li>
+                                <li><i class="fa fa-map-marker"></i> Newyork, USA</li>
+                                <li><i class="fa fa-money" aria-hidden="true"></i> $100 per hour </li>
+                            </ul>
+                        </div>
+                        <div class="doctor-action">
+                            <a href="javascript:void(0)" class="btn btn-white fav-btn">
+                                <i class="fa fa-bookmark"></i>
+                            </a>
+                            <a href="chat.html" class="btn btn-white msg-btn">
+                                <i class="fa fa-comment"></i>
+                            </a>
+                            <a href="javascript:void(0)" class="btn btn-white call-btn" data-toggle="modal"
+                                data-target="#voice_call">
+                                <i class="fa fa-phone"></i>
+                            </a>
+                            <a href="javascript:void(0)" class="btn btn-white call-btn" data-toggle="modal"
+                                data-target="#video_call">
+                                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="clinic-booking">
+                            <a class="apt-btn btn btn-primary" href="booking.html">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Doctor Widget -->
+
+        <!-- Doctor Details Tab -->
+        <div class="card">
+            <div class="card-body pt-0">
+
+                <!-- Tab Menu -->
+                <nav class="user-tabs mb-4">
+                    <ul class="nav nav-tabs nav-tabs-bottom nav-justified">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#doc_overview" data-toggle="tab">Overview</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#doc_locations" data-toggle="tab">Locations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#doc_business_hours" data-toggle="tab">Business Hours</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /Tab Menu -->
+
+                <!-- Tab Content -->
+                <div class="tab-content pt-0">
+
+                    <!-- Overview Content -->
+                    <div role="tabpanel" id="doc_overview" class="tab-pane fade show active">
+                        <app-overview class="row">
+                        </app-overview>
+                    </div>
+                    <!-- /Overview Content -->
+
+                    <!-- Locations Content -->
+                    <div role="tabpanel" id="doc_locations" class="tab-pane fade">
+                        <app-locations></app-locations>
+                    </div>
+                    <!-- /Locations Content -->
+
+                    <!-- Business Hours Content -->
+                    <div role="tabpanel" id="doc_business_hours" class="tab-pane fade">
+                        <app-hours class="row"></app-hours>
+                    </div>
+                    <!-- /Business Hours Content -->
+
+                </div>
+            </div>
+        </div>
+        <!-- /Doctor Details Tab -->
+
+    </div>
+</div>
